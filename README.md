@@ -21,13 +21,14 @@
 
 - put your JSON schemas files in the folders where you want the generated types to be placed
 - use the following pattern for naming files `<typeName>.schema.json`
-- add a `$comment` attribute to your schemas and define which outputs should be generated:
+- add a `$comment` attribute to your schemas and define what `schema-script` should generate:
   ```
     "$comment": "+ts +iots +graphql"
   ```
 
 Note: for `+iots` install [`io-ts`](https://github.com/gcanti/io-ts)(a TypeScript compatible runtime type system for IO decoding/encoding).
-Note: `+graphql` is not supported yet.
+
+Note: `+graphql` support is coming.
 
 ## Getting Started
 
