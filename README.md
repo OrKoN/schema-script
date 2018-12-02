@@ -15,15 +15,16 @@
 
 🌈 **Generate** static and runtime TypeScript types
 
-📨 **Enjoy** better type safety
+😎 Generated files look great thanks to **prettier**, formatted according to your project settings.
 
 ## Prerequisites
 
-In your schemas, add a `$comment` attribute and define which outputs should be generated:
-
-```
-  "$comment": "+ts +iots +graphql"
-```
+- put your JSON schemas files in the folders where you want the generated types to be placed
+- use the following pattern for naming files `<typeName>.schema.json`
+- add a `$comment` attribute to your schemas and define which outputs should be generated:
+  ```
+    "$comment": "+ts +iots +graphql"
+  ```
 
 Note: for `+iots` install [`io-ts`](https://github.com/gcanti/io-ts)(a TypeScript compatible runtime type system for IO decoding/encoding).
 Note: `+graphql` is not supported yet.
@@ -35,6 +36,9 @@ npm i schema-script -g
 schema-script <dir-with-schemas>
 ss  <dir-with-schemas>
 ```
+
+`schema-script` will go over all files matching the pattern `<typeName>.schema.json`. It will generate TypeScript files next to the schema file as following `<TypeName>.ts`.
+
 ## Examples
 
 See [./examples](examples) for some examples of generated types.
