@@ -1,6 +1,6 @@
 {
   "name": "schema-script",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Preprocessor integrating JSON Schema with TypeScript",
   "main": "index.js",
   "bin": {
@@ -20,7 +20,12 @@
     "type": "git",
     "url": "git+https://github.com/orkon/schema-script.git"
   },
-  "keywords": ["typescript", "schema", "json", "generator"],
+  "keywords": [
+    "typescript",
+    "schema",
+    "json",
+    "generator"
+  ],
   "author": "Oleksii Rudenko <alexei.rudenko@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -53,9 +58,16 @@
       "pre-push": "npm run lint"
     }
   },
-  "files": ["dist/app.js", "dist/cli.js", "dist/lib/**/*.js"],
+  "files": [
+    "dist/app.js",
+    "dist/cli.js",
+    "dist/lib/**/*.js"
+  ],
   "jest": {
-    "moduleFileExtensions": ["ts", "js"],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
     "transform": {
       "^.+\\.ts$": "ts-jest"
     },
