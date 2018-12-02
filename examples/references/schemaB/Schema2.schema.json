@@ -1,0 +1,15 @@
+{
+  "$comment": "+ts +iots +graphql",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemaB.json",
+  "properties": {
+    "test": {
+      "type": "string"
+    },
+    "schema1": {
+      "$ref": "https://example.com/schemaA.json"
+    }
+  },
+  "required": ["test", "schema1"],
+  "type": "object"
+}

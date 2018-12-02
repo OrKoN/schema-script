@@ -1,0 +1,38 @@
+{
+  "$comment": "+ts +iots +graphql",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemaA.json",
+  "type": "object",
+  "properties": {
+    "context": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "count": {
+      "type": "number"
+    },
+    "count2": {
+      "type": "integer"
+    },
+    "nullable": {
+      "type": "null"
+    },
+    "list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nested": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": ["context", "message", "code"]
+}
