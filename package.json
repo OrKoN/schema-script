@@ -34,7 +34,7 @@
   "homepage": "https://github.com/orkon/schema-script#readme",
   "devDependencies": {
     "@types/glob": "7.1.1",
-    "@types/jest": "23.3.10",
+    "@types/jest": "23.3.13",
     "@types/json-schema": "7.0.1",
     "@types/prettier": "1.15.2",
     "@types/toposort": "2.0.1",
